@@ -24,9 +24,8 @@ app.get('/failed', (_req: Request, res: Response, _next: NextFunction) => {
 	errorResponse(res, 'This was failed on purpose', 'You cannot go here');
 });
 
-app.use((_req: Request, _res: Response, next: NextFunction) => {
-	// errorResponse(res, {message: 'Page not Found'}, 'Missing Page', 404);
-	next();
+app.use((_req: Request, res: Response) => {
+	errorResponse(res, {message: 'Page not Found'}, 'Missing Page', 404);
 });
 
 app.use((_req: Request, res: Response) => {
