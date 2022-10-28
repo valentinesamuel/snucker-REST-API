@@ -34,7 +34,7 @@ function successResponse(
 function errorResponse(
 	response: Response,
 	errors: any,
-	message: string,
+	message?: string,
 	responseCode: number = 500
 ): Response {
 	let errorMessage;

@@ -16,11 +16,21 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(loggger);
+
 app.get('/', (_req: Request, res: Response, _next: NextFunction) => {
 	successResponse(res, 'Welcome to my server', {data: 'Hello from my server'});
 });
 app.get('/failed', (_req: Request, res: Response, _next: NextFunction) => {
 	errorResponse(res, 'This was failed on purpose', 'You cannot go here');
+});
+
+app.use((_req: Request, _res: Response, next: NextFunction) => {
+	// errorResponse(res, {message: 'Page not Found'}, 'Missing Page', 404);
+	next();
+});
+
+app.use((_req: Request, res: Response) => {
+	errorResponse(res, {message: 'Server Error'});
 });
 
 function startServer(): any {
