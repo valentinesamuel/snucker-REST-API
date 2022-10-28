@@ -1,0 +1,183 @@
+{
+	"shoes": [
+		{
+			"id": 1,
+			"image": "https://res.cloudinary.com/dvup53fhn/image/upload/v1664903142/snicker-fever/naf1_yaba3c.webp",
+			"name": "Nike Air Force 1 '07",
+			"category": "shoe",
+			"price": 110,
+			"isAccessory": false,
+			"accessoryType": null,
+			"description": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+			"sizes": ["Small", "Medium", "Large", "Xtra Large"],
+			"gender": "male",
+			"age": "adult",
+			"kidAge": null,
+			"colors": ["White", "Black"],
+			"brand": "nike",
+			"activities": ["Lifestyle"],
+			"belongsToCollection": false,
+			"collections": null,
+			"athlete": null,
+			"sport": ["Basketball", "Gym", "Skateboarding", "Tennis", "LifeStyle"],
+			"productDetail": {
+				"title": "Legendary Style Refined.",
+				"description": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+				"benefits": [
+					"The stitched overlays on the upper add heritage style, durability and support.",
+					"Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.",
+					"The low-cut silhouette adds a clean, streamlined look.",
+					"The padded collar feels soft and comfortable."
+				],
+				"details": [
+					"Foam midsole",
+					"Perforations on the toe",
+					"Rubber sole",
+					"Shown: White",
+					"Style: CW2288-111"
+				],
+				"moreDetails": [
+					"Air Force 1 Origins",
+					"Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history."
+				]
+			},
+			"reviews": [
+				{
+					"id": 1,
+					"name": "Shaun H.",
+					"title": "Can never go wrong with a fresh pair of air forces",
+					"rating": 5,
+					"comment": "Can never go wrong with a fresh pair of air forces. I would recommend purchasing the crease protector, true air force 1 heads know what I'm talking about.",
+					"date": "Sep 17, 2022"
+				},
+				{
+					"id": 2,
+					"name": "Michelle Samuel",
+					"title": "Amazing quality and fast shipping!!",
+					"rating": 5,
+					"comment": "Product arrived as described and was shipped very fast!",
+					"date": "Sep 08, 2022"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"image": "https://res.cloudinary.com/dvup53fhn/image/upload/v1664903385/snicker-fever/ndhr_pbz6fh.webp",
+			"name": "Nike Dunk High Retro",
+			"category": "shoe",
+			"price": 125,
+			"isAccessory": false,
+			"accessoryType": null,
+			"description": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with perfectly sheened overlays and original university colors. With its classic hoops design, the Nike Dunk High Retro channels '80s vintage back onto the streets while its padded, high-top collar adds an old-school look rooted in comfort.",
+			"sizes": ["Medium"],
+			"gender": "male",
+			"age": "adult",
+			"kidAge": null,
+			"colors": ["Red", "Black"],
+			"brand": "nike",
+			"activities": ["Lifestyle", "Basketball"],
+			"belongsToCollection": false,
+			"collections": null,
+			"athlete": "Jordan",
+			"sport": ["Basketball", "LifeStyle"],
+			"productDetail": {
+				"title": "BRINGING OLD SCHOOL BACK",
+				"description": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with perfectly sheened overlays and original university colors. With its classic hoops design, the Nike Dunk High Retro channels '80s vintage back onto the streets while its padded, high-top collar adds an old-school look rooted in comfort.",
+				"benefits": [
+					"TThe crisp leather on the upper has a slight sheen, ages to soft perfection and features durable overlays reminiscent of '80s b-ball.",
+					"The foam midsole offers lightweight, responsive cushioning.",
+					"The padded, high-top collar adds an old school look that feels comfortable.",
+					"The bold color blocking returns to the original university colors released in 1985, letting you choose who reigned supreme and rep your team.",
+					"The rubber sole with classic hoops pivot circle adds durability, tractions and heritage style."
+				],
+				"details": [
+					"Foam midsole",
+					"Perforations on the toe",
+					"Rubber sole",
+					"Shown: White",
+					"Style: CW2288-111"
+				],
+				"moreDetails": [
+					"Air Force 1 Origins",
+					"Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history."
+				]
+			},
+			"reviews": [
+				{
+					"id": 1,
+					"name": "Shaun H.",
+					"title": "Can never go wrong with a fresh pair of air forces",
+					"rating": 5,
+					"comment": "Can never go wrong with a fresh pair of air forces. I would recommend purchasing the crease protector, true air force 1 heads know what I'm talking about.",
+					"date": "Sep 17, 2022"
+				},
+				{
+					"id": 2,
+					"name": "Michelle Samuel",
+					"title": "Amazing quality and fast shipping!!",
+					"rating": 5,
+					"comment": "Product arrived as described and was shipped very fast!",
+					"date": "Sep 08, 2022"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"image": "https://res.cloudinary.com/dvup53fhn/image/upload/v1664986334/snicker-fever/nazp30_bqatae.webp",
+			"name": "Nike Air Zoom Pegasus 39",
+			"category": "shoe",
+			"price": 130,
+			"isAccessory": false,
+			"accessoryType": null,
+			"description": "Running is your daily ritual, with every step taking you closer to your personal goal. Let the Nike Air Zoom Pegasus 39 help you ascend to new heights, whether you're training or jogging, with its intuitive design. More lightweight up top than the Pegasus 38 and ideal to wear in any season, it has a supportive sensation to help keep your feet contained, while underfoot cushioning and double Zoom Air units (1 more than the Peg 38) give you an extra pop to your step. Your trusted workhorse with wings is back. Time to fly.",
+			"sizes": ["Medium", "Large", "Small", "Xtra Large"],
+			"gender": "male",
+			"age": "adult",
+			"kidAge": null,
+			"colors": ["white", "Black", "sea green", "red", "blue"],
+			"brand": "nike",
+			"activities": ["Lifestyle", "Running", "Gym", "Walking"],
+			"belongsToCollection": false,
+			"collections": null,
+			"athlete": null,
+			"sport": ["Track and Field", "Tennis", "Cycling", "LifeStyle"],
+			"productDetail": {
+				"title": "ENERGIZED FOR MILES.",
+				"description": "Running is your daily ritual, with every step taking you closer to your personal goal. Let the Nike Air Zoom Pegasus 39 help you ascend to new heights, whether you're training or jogging, with its intuitive design. More lightweight up top than the Pegasus 38 and ideal to wear in any season, it has a supportive sensation to help keep your feet contained, while underfoot cushioning and double Zoom Air units (1 more than the Peg 38) give you an extra pop to your step. Your trusted workhorse with wings is back. Time to fly.",
+				"benefits": [
+					"Total Comfort",
+					"Supportive Steps",
+					"Snap, Run and Pop",
+					"Smooth Transitions",
+					"Tongue is separated from the upper to give room for different foot shapes.",
+					"Waffle-inspired outsole gives you excellent traction.",
+					"Grooves on the rubber sole allow for natural motion."
+				],
+				"details": [
+					"Not intended for use as Personal Protective Equipment (PPE)",
+					"Shown: Black",
+					"Style: DH4071-008"
+				],
+				"moreDetails": null
+			},
+			"reviews": [
+				{
+					"id": 1,
+					"name": "DeniV689311909",
+					"title": "38's were much better than the 39's.",
+					"rating": 5,
+					"comment": "I'm sad to say that I am not a fan of the Pegasus 39 line. The 38's were much more comfortable. The 39's are more narrow and fell stiffer on the soles of the feet. I'll be looking to find some 38's from 3rd party retailers if I can find them and stock up.",
+					"date": "Sep 30, 2022"
+				},
+				{
+					"id": 2,
+					"name": "GregT409370174 ",
+					"title": "Run Away !",
+					"rating": 5,
+					"comment": "I'm a devoted fan of the Pegasus line from the 35's up to the disappointing 39's. The 39's are the worst ever having little to no cushion or support. I have close to 100 miles on them and they only get worse not better. I was going to return them but got so many compliments on them ( green/volt ) I decided to keep them ( Mistake !! ) Save some money and buy the 38's they are an excellent shoe ! Lets hope the 40's make up for this disaster !",
+					"date": "Sep 21, 2022"
+				}
+			]
+		}
+	]
+}
