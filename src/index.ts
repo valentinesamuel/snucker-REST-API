@@ -19,6 +19,14 @@ app.use('/', (_req: Request, res: Response, _next: NextFunction) => {
 	res.status(200).send({data: 'Hello from my own personal server'});
 });
 
-app.listen(PORT, () => {
-	console.log(`Server is Listening on port ${PORT}...`);
-});
+function startServer(): any {
+	try {
+		app.listen(PORT, () => {
+			console.log(`Server is Listening on port ${PORT}...`);
+		});
+	} catch (error) {
+		console.error(error);
+	}
+}
+
+startServer();

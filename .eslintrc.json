@@ -31,6 +31,8 @@
 		"@typescript-eslint/no-unused-expressions": "warn",
 		"no-unused-vars": "off",
 		"@typescript-eslint/no-unused-vars": "warn",
+		"@typescript-eslint/space-before-function-paren": "off",
+		"space-before-function-paren": "off",
 		"no-use-before-define": "off",
 		"@typescript-eslint/no-use-before-define": "warn",
 		"@typescript-eslint/object-curly-spacing": "off",

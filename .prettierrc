@@ -7,6 +7,5 @@
 	"useTabs": true,
 	"singleAttributePerLine": true,
 	"quoteProps": "as-needed",
-	"bracketSpacing": false,
-	"bracketSameLine": true
+	"bracketSpacing": false
 }
