@@ -1,5 +1,5 @@
-import {NextFunction, Request, Response} from 'express';
-import {DateTime} from 'luxon';
+import {NextFunction, Request, Response} from 'express'
+import {DateTime} from 'luxon'
 
 /**
  * @description A middleware function that logs server request to endpoints
@@ -13,18 +13,18 @@ const loggger: any = (
 	response: Response,
 	next: NextFunction
 ) => {
-	const {method, url} = request;
+	const {method, url} = request
 
-	const startTime = DateTime.local();
+	const startTime = DateTime.local()
 	response.on('close', () => {
 		const log = `[${method}: ${url}]:  Finished with ${
 			response.statusCode
 		} response in ${
 			DateTime.local().diff(startTime, 'milliseconds').milliseconds
-		} ms`;
-		console.log(log);
-	});
-	next();
-};
+		} ms`
+		console.log(log)
+	})
+	next()
+}
 
-export {loggger};
+export {loggger}

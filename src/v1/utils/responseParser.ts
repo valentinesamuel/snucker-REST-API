@@ -1,4 +1,4 @@
-import {Response} from 'express';
+import {Response} from 'express'
 
 /**
  * @description A function that facilitates the response of a successful request
@@ -19,8 +19,8 @@ function successResponse(
 		responseCode,
 		message,
 		responseData
-	};
-	return response.status(responseCode).json(responseBody);
+	}
+	return response.status(responseCode).json(responseBody)
 }
 
 /**
@@ -37,27 +37,27 @@ function errorResponse(
 	message?: string,
 	responseCode: number = 500
 ): Response {
-	let errorMessage;
+	let errorMessage
 	if (message == null) {
 		switch (responseCode) {
 			case 400:
-				errorMessage = 'Bad Request';
-				break;
+				errorMessage = 'Bad Request'
+				break
 			case 403:
-				errorMessage = 'Forbidden User Access';
-				break;
+				errorMessage = 'Forbidden User Access'
+				break
 			case 404:
-				errorMessage = 'Resource Not Found';
-				break;
+				errorMessage = 'Resource Not Found'
+				break
 			case 422:
-				errorMessage = 'Invalid User Input';
-				break;
+				errorMessage = 'Invalid User Input'
+				break
 			default:
-				errorMessage = 'Internal Server Error';
-				break;
+				errorMessage = 'Internal Server Error'
+				break
 		}
 	} else {
-		errorMessage = message;
+		errorMessage = message
 	}
 
 	const responseBody = {
@@ -65,7 +65,7 @@ function errorResponse(
 		status: 'Failed',
 		responseCode,
 		message: errorMessage
-	};
-	return response.status(responseCode).json(responseBody);
+	}
+	return response.status(responseCode).json(responseBody)
 }
-export {successResponse, errorResponse};
+export {successResponse, errorResponse}
