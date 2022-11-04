@@ -1,5 +1,5 @@
 import express, {Request, Response} from 'express'
-import {successResponse} from '../utils/responseParser'
+import {successResponse} from '../utils/response_parser'
 
 const router = express.Router()
 

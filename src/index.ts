@@ -2,7 +2,8 @@ import express, {Application, NextFunction, Request, Response} from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import {loggger} from './v1/middleware/logger'
-import {errorResponse, successResponse} from './v1/utils/responseParser'
+import {errorResponse, successResponse} from './v1/utils/response_parser'
+import {queryParser} from './v1/middleware/query_parser'
 dotenv.config()
 
 const PORT = process.env.PORT ?? 5000
@@ -16,10 +17,12 @@ app.use(
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(loggger)
+app.use(queryParser)
 
 app.get('/', (_req: Request, res: Response, _next: NextFunction) => {
 	successResponse(res, 'Welcome to my server', {data: 'Hello from my server'})
 })
+
 app.get('/failed', (_req: Request, res: Response, _next: NextFunction) => {
 	errorResponse(res, 'This was failed on purpose', 'You cannot go here')
 })

@@ -20,7 +20,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     /* Type Checking */
-    "strict": true, /* Enable all strict type-checking options. */
+     "strict": true, /*Enable all strict type-checking options. */
     "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type. */
     "noUnusedParameters": true, /* Raise an error when a function parameter isn't read. */
     "noUnusedLocals": true, /* Report errors on unused local variables. */
