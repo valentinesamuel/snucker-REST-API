@@ -17,7 +17,6 @@ app.use(
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(loggger)
-app.use(queryParser)
 
 app.get('/', (_req: Request, res: Response, _next: NextFunction) => {
 	successResponse(res, 'Welcome to my server', {data: 'Hello from my server'})
@@ -26,6 +25,14 @@ app.get('/', (_req: Request, res: Response, _next: NextFunction) => {
 app.get('/failed', (_req: Request, res: Response, _next: NextFunction) => {
 	errorResponse(res, 'This was failed on purpose', 'You cannot go here')
 })
+
+app.get(
+	'/shop',
+	queryParser,
+	(_req: Request, res: Response, _next: NextFunction) => {
+		successResponse(res, 'You are querying', {data: 'Get you data'})
+	}
+)
 
 app.use((_req: Request, res: Response) => {
 	errorResponse(res, {message: 'Page not Found'}, 'Missing Page', 404)

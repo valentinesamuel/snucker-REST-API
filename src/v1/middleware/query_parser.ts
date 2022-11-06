@@ -1,31 +1,10 @@
-/* let query = 'gender=men&price=asc&brand=nike';
-let queryArray = query.split('&')
-console.log(queryArray);
-let queryObject = queryArray.forEach(query => {
-  key = query.split('=')[0];
-value = query.split('=')[1];
-queryObj[key] = value;
-});
- */
-
 import {NextFunction, Request, Response} from 'express'
+import {IQueryObj} from '../types/utility.types'
 
-// let queryObj = {}
-// let query =
-// 	'gender=male+female&brand=nike+puma+diadora&price=asc&name=High%Tight+Nike%Kyrie%2&sport=basketball+football+American%Football+track%and%field'
-// /*
-//  */
-// let querySections = query.split('&').forEach((query) => {
-// 	key = query.split('=')[0]
-// 	value = query.split('=')[1]
-// 	queryObj[key] = value.replace(/%/g, ' ').split('+')
-// })
-// console.log('=========')
-// console.log(queryObj)
 /**
  * @description A middleware function that parses the query string from the client to a query format for mongodb
  * @param {Object} request The request object
- * @param {Object} response The response object
+ * @param {Object} _response The response object
  * @param {function} next The next function
  */
 
@@ -34,8 +13,30 @@ const queryParser: any = (
 	_response: Response,
 	next: NextFunction
 ) => {
-	console.log(request.url)
-	// Destructure the url into mongodb format
+	const queryString = request.url
+	let key
+	let value
+	const queryObjs: IQueryObj<string[] | string> = {}
+	queryString.split('&').forEach((query) => {
+		key = query.split('=')[0].replace(/\/shop\/\?/g, '')
+		value = query.split('=')[1].replace(/%/g, ' ').split('+')
+		if (key === 'price') {
+			value = value.join()
+		}
+		queryObjs[key] = value
+	})
+	console.log(queryObjs)
+	// ======
+	//  If any editing is to be done, use below method
+	// const {gender, sport, name, price, brand} = queryObjs
+	// const queryObject = {
+	// 	gender,
+	// 	sport,
+	// 	name,
+	// 	price,
+	// 	brand
+	// }
+	// console.log(queryObject)
 	next()
 }
 
