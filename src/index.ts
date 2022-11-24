@@ -4,6 +4,8 @@ import dotenv from 'dotenv'
 import {loggger} from './v1/middleware/logger'
 import {errorResponse, successResponse} from './v1/utils/response_parser'
 import {queryParser} from './v1/middleware/query_parser'
+import {storeRouter} from './v1/routes/store.route'
+import {collectionRouter} from './v1/routes/collections.route'
 dotenv.config()
 
 const PORT = process.env.PORT ?? 5000
@@ -33,6 +35,9 @@ app.get(
 		successResponse(res, 'You are querying', {data: 'Get you data'})
 	}
 )
+
+app.use('/v1/store', storeRouter)
+app.use('/v1/collection', collectionRouter)
 
 app.use((_req: Request, res: Response) => {
 	errorResponse(res, {message: 'Page not Found'}, 'Missing Page', 404)

@@ -1,19 +1,21 @@
 import express, {Request, Response} from 'express'
 import {successResponse} from '../utils/response_parser'
 
-const router = express.Router()
+const collectionRouter = express.Router()
 
-router.get('/', (_req: Request, res: Response) => {
+collectionRouter.get('/', (_req: Request, res: Response) => {
 	successResponse(res, 'return images for different collections home page', {
 		images: 'images',
 		text: 'paragraphs'
 	})
 })
 
-router.get('/:brand-series', (_req: Request, _res: Response) => {
+collectionRouter.get('/:brand-series', (_req: Request, _res: Response) => {
 	// filter products by brand series in the dv
 })
 
-router.get('/:athlete', (_req: Request, _res: Response) => {
+collectionRouter.get('/:athlete', (_req: Request, _res: Response) => {
 	// filter products by athlete in the dv
 })
+
+export {collectionRouter}

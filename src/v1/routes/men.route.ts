@@ -1,23 +1,25 @@
 import express, {Request, Response} from 'express'
 import {successResponse} from '../utils/response_parser'
 
-const router = express.Router()
+const menRouter = express.Router()
 
-router.get('/', (_req: Request, res: Response) => {
+menRouter.get('/', (_req: Request, res: Response) => {
 	successResponse(res, 'return images for men home page', {
 		images: 'images',
 		text: 'paragraphs'
 	})
 })
 
-router.get('/shoes', (_req: Request, _res: Response) => {
+menRouter.get('/shoes', (_req: Request, _res: Response) => {
 	// filter products by shoes in the dv
 })
 
-router.get('/clothing', (_req: Request, _res: Response) => {
+menRouter.get('/clothing', (_req: Request, _res: Response) => {
 	// filter products by clothing in the dv
 })
 
-router.get('/accessories', (_req: Request, _res: Response) => {
+menRouter.get('/accessories', (_req: Request, _res: Response) => {
 	// filter products by accessories in the dv
 })
+
+export {menRouter}
