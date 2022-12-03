@@ -1,9 +1,9 @@
-import {BrandRepository} from '../repositories/brand.repository'
+import {ContainerService} from './index'
 
 const BrandService = (): any => {
 	// Get Brand
-	const getBrand = async (requestBody: any) => {
-		const brand = await BrandRepository().getBrand(requestBody)
+	const getBrandProduct = async (requestBody: any) => {
+		const brand = await ContainerService.getBrandProducts(requestBody)
 		if (brand === null) {
 			throw new Error('Brand not found')
 		}
@@ -11,7 +11,7 @@ const BrandService = (): any => {
 	}
 
 	return {
-		getBrand
+		getBrandProduct
 	}
 }
 

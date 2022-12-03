@@ -1,13 +1,8 @@
-import express, {Request, Response} from 'express'
-import {successResponse} from '../utils/response_parser'
+import express from 'express'
+import {getBrandProducts} from '../controllers/brand.controller'
 
 const brandRouter = express.Router()
 
-brandRouter.get('/', (_req: Request, res: Response) => {
-	successResponse(res, 'return images for different brands home page', {
-		images: 'images',
-		text: 'paragraphs'
-	})
-})
+brandRouter.get('/:brandName', getBrandProducts)
 
 export {brandRouter}

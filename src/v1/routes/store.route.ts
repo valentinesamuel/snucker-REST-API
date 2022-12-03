@@ -3,6 +3,7 @@ import {successResponse} from '../utils/response_parser'
 import {menRouter} from './men.route'
 import {womenRouter} from './women.route'
 import {kidsRouter} from './kids.route'
+import {brandRouter} from './brand.route'
 
 const storeRouter = express.Router()
 
@@ -16,5 +17,6 @@ storeRouter.get('/', (_req: Request, res: Response) => {
 storeRouter.use('/men', menRouter)
 storeRouter.use('/women', womenRouter)
 storeRouter.use('/kids', kidsRouter)
+storeRouter.use('/brand', brandRouter)
 
 export {storeRouter}
